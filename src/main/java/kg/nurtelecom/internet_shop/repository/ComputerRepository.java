@@ -93,18 +93,6 @@ public class ComputerRepository implements ComputerService {
 
     public List<ComputerResponse> findAll() {
 
-//        String authHeader = request.getHeader("Authorization");
-//        if (authHeader != null && authHeader.startsWith("Bearer ")) {
-//            String token = authHeader.substring("Bearer ".length());
-//            // 2. Декодируем токен с помощью Auth0 JWT
-//            DecodedJWT decodedJWT = JWT.decode(token);
-//            // 3. Выводим информацию о пользователе в консоль
-//            System.out.println("User Subject: " + decodedJWT.getSubject());
-//            System.out.println("User Claims: " + decodedJWT.getClaim("id").asString());
-//        } else {
-//            System.out.println("Authorization header не найден или не содержит Bearer токен");
-//        }
-
         String sql = "SELECT id, name, price FROM computers";
 
         return jdbcClient.sql(sql)

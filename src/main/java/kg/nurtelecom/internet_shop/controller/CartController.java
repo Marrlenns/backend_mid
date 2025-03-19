@@ -4,7 +4,6 @@ import kg.nurtelecom.internet_shop.payload.request.CartItemRequest;
 import kg.nurtelecom.internet_shop.payload.request.UpdateQuantityRequest;
 import kg.nurtelecom.internet_shop.payload.response.CartItemResponse;
 import kg.nurtelecom.internet_shop.service.CartService;
-import kg.nurtelecom.internet_shop.service.ClientService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -16,11 +15,9 @@ import java.util.UUID;
 @RequestMapping("/api/cart")
 public class CartController {
 
-    private final ClientService clientService;
     private final CartService cartService;
 
-    public CartController(ClientService clientService, CartService cartService) {
-        this.clientService = clientService;
+    public CartController(CartService cartService) {
         this.cartService = cartService;
     }
 
