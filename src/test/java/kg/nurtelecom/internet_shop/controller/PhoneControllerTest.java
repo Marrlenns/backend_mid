@@ -1,4 +1,4 @@
-package kg.nurtelecom.internet_shop.controller.api;
+package kg.nurtelecom.internet_shop.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import kg.nurtelecom.internet_shop.payload.request.PhoneRequest;

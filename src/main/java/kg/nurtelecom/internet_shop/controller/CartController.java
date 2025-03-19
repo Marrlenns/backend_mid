@@ -1,4 +1,4 @@
-package kg.nurtelecom.internet_shop.controller.api;
+package kg.nurtelecom.internet_shop.controller;
 
 import kg.nurtelecom.internet_shop.payload.request.CartItemRequest;
 import kg.nurtelecom.internet_shop.payload.request.UpdateQuantityRequest;
